@@ -1,0 +1,25 @@
+{
+  "name": "chapobot",
+  "version": "0.0.1",
+  "description": "API wrapper/script to interact with chapo.chat",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cryptodeal/chapobot.git"
+  },
+  "keywords": [
+    "chapo.chat",
+    "bot",
+    "script",
+    "api"
+  ],
+  "author": "cryptodeal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cryptodeal/chapobot/issues"
+  },
+  "homepage": "https://github.com/cryptodeal/chapobot#readme"
+}
