@@ -1,0 +1,26 @@
+dependencies:
+  sockette: 2.0.6
+  ws: 7.4.3
+lockfileVersion: 5.2
+packages:
+  /sockette/2.0.6:
+    dev: false
+    resolution:
+      integrity: sha512-W6iG8RGV6Zife3Cj+FhuyHV447E6fqFM2hKmnaQrTvg3OydINV3Msj3WPFbX76blUlUxvQSMMMdrJxce8NqI5Q==
+  /ws/7.4.3:
+    dev: false
+    engines:
+      node: '>=8.3.0'
+    peerDependencies:
+      bufferutil: ^4.0.1
+      utf-8-validate: ^5.0.2
+    peerDependenciesMeta:
+      bufferutil:
+        optional: true
+      utf-8-validate:
+        optional: true
+    resolution:
+      integrity: sha512-hr6vCR76GsossIRsr8OLR9acVVm1jyfEWvhbNjtgPOrfvAlKzvyeg/P6r8RuDjRyrcQoPQT7K0DGEPc7Ae6jzA==
+specifiers:
+  sockette: ^2.0.6
+  ws: ^7.4.3
