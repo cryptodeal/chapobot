@@ -1,0 +1,12 @@
+{
+  "users": [
+    {
+      "jwt": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6NjQxOCwidG9rZW5faWQiOiI1OTUzMWViNy0zODcyLTQyN2UtYTBlNC03OTFhYjY4NGI4ZTIiLCJpc3MiOiJ3d3cuY2hhcG8uY2hhdCJ9.MrrzeWZ-x3fgo6nbD0koVKLzkW_o5Ww9peOLzkA4RTY",
+      "id": 6418,
+      "username": "sheeksab",
+      "password": "B",
+      "isBanned": false
+    }
+  ],
+  "posts": []
+}
