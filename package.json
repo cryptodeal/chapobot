@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/cryptodeal/chapobot#readme",
   "dependencies": {
+    "hide-my-name-vpn": "^1.0.1",
     "sockette": "^2.0.6",
     "ws": "^7.4.3"
   }

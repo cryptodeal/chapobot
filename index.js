@@ -1,22 +1,13 @@
 global.WebSocket = require('ws');
 const Sockette = require('sockette');
 const fs = require('fs');
+const HideMyNameVPN = require('hide-my-name-vpn').default
 const {constructComment} = require('./utils/opHelpers');
 const {importData} = require('./utils/data');
+const hideMyName = new HideMyNameVPN();
 const host = 'www.chapo.chat';
 const wsEndpoint = 'api/v1/ws';
 const userSocketInstances = [];
-
-//declare some temp constants for testing purposes
-const user = {
-  jwt: "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6NjQxOCwidG9rZW5faWQiOiI1OTUzMWViNy0zODcyLTQyN2UtYTBlNC03OTFhYjY4NGI4ZTIiLCJpc3MiOiJ3d3cuY2hhcG8uY2hhdCJ9.MrrzeWZ-x3fgo6nbD0koVKLzkW_o5Ww9peOLzkA4RTY",
-  id: 6418
-}
-const post = {
-  id: 88066
-}
-const commentBody = "asdlkfj"
-
 
 const userLifeCycle = async (user, commentBody, post) => {
   let rawdata = await fs.readFileSync('data.json');
@@ -29,7 +20,7 @@ const userLifeCycle = async (user, commentBody, post) => {
     onopen: e => {
       userSocket.ws = e.target;
       isOpen = true;
-      console.log('Connected!', e)
+      console.log(`${user.username} connected!`, e)
     },
     onmessage: e => {
       console.log('Received:', e)
@@ -56,6 +47,16 @@ const userLifeCycle = async (user, commentBody, post) => {
 
 //Testing:
   //userLifeCycle(user, commentBody, post)
-  importData().then(data => console.log(data))
+  //importData().then(data => {
+    //data.users.map(user => userLifeCycle(user, commentBody, post))
+  //})
+
+(async () => {
+  const proxy = await hideMyName.getRandomProxy({
+    maxDelay: 1000,
+  });
+
+  console.log(proxy);
+})();
 
 

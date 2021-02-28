@@ -6,7 +6,18 @@
       "username": "sheeksab",
       "password": "B",
       "isBanned": false
+    },
+    {
+      "jwt": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6Njk2NSwidG9rZW5faWQiOiI2ZDM2OTkzYS01MWQ0LTRmMTEtYTRkOC01MmMzMmJhMjBiOTMiLCJpc3MiOiJ3d3cuY2hhcG8uY2hhdCJ9.2p9M7g-SC8ALzohW7az2PTmsGTc779eghROp8a1oylw",
+      "id": 6965,
+      "username": "rainb0w",
+      "password": "B",
+      "isBanned": false
     }
   ],
-  "posts": []
+  "posts": [
+    {
+      "id": 88066
+    }
+  ]
 }
